@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+<!--bottom navigation bar-->
+    <color name = "navigation_color_home">#6200EE</color>
+    <color name = "navigation_color_health">#C9379D</color>
+    <color name = "navigation_color_diary">#E6A919</color>
+    <color name = "navigation_color_community">#008577</color>
+    <color name = "navigation_color_settings">#912361</color>
+</resources>

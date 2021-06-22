@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1001702665576",
+    "firebase_url": "https://smoke-app-77f35.firebaseio.com",
+    "project_id": "smoke-app-77f35",
+    "storage_bucket": "smoke-app-77f35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001702665576:android:a45469266f05cd6faf7add",
+        "android_client_info": {
+          "package_name": "com.example.smoke_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001702665576-7r9ij4qdnejgh8cvu221iq2hih1f9mdc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzUti4u1rRFlvip1RDh5PRJIV0cA79fv4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001702665576-7r9ij4qdnejgh8cvu221iq2hih1f9mdc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

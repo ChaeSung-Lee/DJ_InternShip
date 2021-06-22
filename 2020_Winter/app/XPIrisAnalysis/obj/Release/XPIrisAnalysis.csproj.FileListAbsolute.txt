@@ -1,0 +1,10 @@
+C:\Users\owner\source\repos\XPIrisAnalysis\XPIrisAnalysis\bin\Release\XPIrisAnalysis.exe.config
+C:\Users\owner\source\repos\XPIrisAnalysis\XPIrisAnalysis\bin\Release\XPIrisAnalysis.exe
+C:\Users\owner\source\repos\XPIrisAnalysis\XPIrisAnalysis\bin\Release\XPIrisAnalysis.pdb
+C:\Users\owner\source\repos\XPIrisAnalysis\XPIrisAnalysis\obj\Release\XPIrisAnalysis.ASMABS10.resources
+C:\Users\owner\source\repos\XPIrisAnalysis\XPIrisAnalysis\obj\Release\XPIrisAnalysis.MainForm.resources
+C:\Users\owner\source\repos\XPIrisAnalysis\XPIrisAnalysis\obj\Release\XPIrisAnalysis.Properties.Resources.resources
+C:\Users\owner\source\repos\XPIrisAnalysis\XPIrisAnalysis\obj\Release\XPIrisAnalysis.csproj.GenerateResource.cache
+C:\Users\owner\source\repos\XPIrisAnalysis\XPIrisAnalysis\obj\Release\XPIrisAnalysis.csproj.CoreCompileInputs.cache
+C:\Users\owner\source\repos\XPIrisAnalysis\XPIrisAnalysis\obj\Release\XPIrisAnalysis.exe
+C:\Users\owner\source\repos\XPIrisAnalysis\XPIrisAnalysis\obj\Release\XPIrisAnalysis.pdb

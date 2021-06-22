@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E34B20A-6632-4BC5-8D8B-53F82F45F912}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>XPIrisAnalysis</RootNamespace>
+    <AssemblyName>XPIrisAnalysis</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IronPython, Version=2.7.9.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPython.2.7.9\lib\net45\IronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Modules, Version=2.7.9.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPython.2.7.9\lib\net45\IronPython.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.SQLite, Version=2.7.9.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPython.2.7.9\lib\net45\IronPython.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Wpf, Version=2.7.9.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPython.2.7.9\lib\net45\IronPython.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Engine" />
+    <Reference Include="Microsoft.Dynamic, Version=1.2.2.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicLanguageRuntime.1.2.2\lib\net45\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting, Version=1.2.2.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicLanguageRuntime.1.2.2\lib\net45\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting.Metadata, Version=1.2.2.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicLanguageRuntime.1.2.2\lib\net45\Microsoft.Scripting.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ASMABS11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASMABS11.Designer.cs">
+      <DependentUpon>ASMABS11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASMABS21.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASMABS21.Designer.cs">
+      <DependentUpon>ASMABS21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLMABS41.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLMABS41.Designer.cs">
+      <DependentUpon>FLMABS41.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLMABS42.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLMABS42.Designer.cs">
+      <DependentUpon>FLMABS42.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IFMABS11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IFMABS11.Designer.cs">
+      <DependentUpon>IFMABS11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RGMABS11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RGMABS11.Designer.cs">
+      <DependentUpon>RGMABS11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RGMABS21.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RGMABS21.Designer.cs">
+      <DependentUpon>RGMABS21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASMABS31.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASMABS31.Designer.cs">
+      <DependentUpon>ASMABS31.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASMABS41.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASMABS41.Designer.cs">
+      <DependentUpon>ASMABS41.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLMABS21.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLMABS21.Designer.cs">
+      <DependentUpon>FLMABS21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLMABS11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLMABS11.Designer.cs">
+      <DependentUpon>FLMABS11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IFMABS31.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IFMABS31.Designer.cs">
+      <DependentUpon>IFMABS31.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IFMABS21.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IFMABS21.Designer.cs">
+      <DependentUpon>IFMABS21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RGMABS12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RGMABS12.Designer.cs">
+      <DependentUpon>RGMABS12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RGMABS14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RGMABS14.Designer.cs">
+      <DependentUpon>RGMABS14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RGMABS22.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RGMABS22.Designer.cs">
+      <DependentUpon>RGMABS22.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RGMABS24.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RGMABS24.Designer.cs">
+      <DependentUpon>RGMABS24.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ASMABS11.resx">
+      <DependentUpon>ASMABS11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASMABS21.resx">
+      <DependentUpon>ASMABS21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASMABS31.resx">
+      <DependentUpon>ASMABS31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASMABS41.resx">
+      <DependentUpon>ASMABS41.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLMABS11.resx">
+      <DependentUpon>FLMABS11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLMABS41.resx">
+      <DependentUpon>FLMABS41.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLMABS42.resx">
+      <DependentUpon>FLMABS42.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IFMABS11.resx">
+      <DependentUpon>IFMABS11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IFMABS21.resx">
+      <DependentUpon>IFMABS21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IFMABS31.resx">
+      <DependentUpon>IFMABS31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RGMABS11.resx">
+      <DependentUpon>RGMABS11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RGMABS21.resx">
+      <DependentUpon>RGMABS21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLMABS21.resx">
+      <DependentUpon>FLMABS21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RGMABS12.resx">
+      <DependentUpon>RGMABS12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RGMABS14.resx">
+      <DependentUpon>RGMABS14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RGMABS22.resx">
+      <DependentUpon>RGMABS22.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RGMABS24.resx">
+      <DependentUpon>RGMABS24.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

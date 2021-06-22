@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/btn_drinkminus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/tv_dialogDrinkingAvg"
+        app:layout_constraintTop_toBottomOf="@+id/et_nickname"
+        app:srcCompat="@drawable/ic_minus" />
+
+    <TextView
+        android:id="@+id/tv_dialogNickname"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:text="닉네임"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_dialogGavi"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="42dp"
+        android:text="개비"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_dialogSmokeCount"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dialogJan" />
+
+    <EditText
+        android:id="@+id/et_nickname"
+        android:layout_width="206dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="닉네임을 입력하세요."
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_dialogNickname"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_dialogDrinkingAvg"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="하루 평균 음주량"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dialogNickname" />
+
+    <TextView
+        android:id="@+id/tv_dialogSmokeAvg"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="하루 평균 흡연량"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dialogDrinkingAvg" />
+
+    <TextView
+        android:id="@+id/tv_dialogJan"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="잔"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_dialogDrinkcount"
+        app:layout_constraintTop_toBottomOf="@+id/et_nickname" />
+
+    <TextView
+        android:id="@+id/tv_dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="정보입력"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_smokeminus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="32dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/tv_dialogSmokeAvg"
+        app:layout_constraintTop_toBottomOf="@+id/btn_drinkminus"
+        app:srcCompat="@drawable/ic_minus" />
+
+    <ImageButton
+        android:id="@+id/btn_smokeplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/tv_dialogGavi"
+        app:layout_constraintTop_toBottomOf="@+id/btn_drinkplus"
+        app:srcCompat="@drawable/ic_plus" />
+
+    <ImageButton
+        android:id="@+id/btn_drinkplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/tv_dialogJan"
+        app:layout_constraintTop_toBottomOf="@+id/et_nickname"
+
+        app:srcCompat="@drawable/ic_plus" />
+
+    <TextView
+        android:id="@+id/tv_dialogDrinkcount"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="28dp"
+        android:gravity="right"
+        android:text="7"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_drinkminus"
+        app:layout_constraintTop_toBottomOf="@+id/et_nickname" />
+
+    <TextView
+        android:id="@+id/tv_dialogSmokeCount"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="42dp"
+        android:gravity="right"
+        android:text="10"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_smokeminus"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dialogDrinkcount" />
+
+    <Button
+        android:id="@+id/btn_dialogOK"
+        android:layout_width="131dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="225dp"
+        android:text="확인"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

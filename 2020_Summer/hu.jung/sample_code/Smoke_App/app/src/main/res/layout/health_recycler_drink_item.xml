@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:padding="7dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_health_drink_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+            <com.dinuscxj.progressbar.CircleProgressBar
+                android:id="@+id/pb_drink_circle"
+                app:style="solid_line"
+                app:progress_text_size="15sp"
+                app:progress_text_color="#FF00FF"
+                app:progress_stroke_width="5dp"
+                app:progress_start_degree="-90"
+                app:progress_start_color="#FF0000"
+                app:progress_end_color="#0000FF"
+                app:progress_background_color="#BBBBFF"
+                app:progress_stroke_cap="round"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_health_drink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="부연설명"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:textSize="15dp"
+            />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

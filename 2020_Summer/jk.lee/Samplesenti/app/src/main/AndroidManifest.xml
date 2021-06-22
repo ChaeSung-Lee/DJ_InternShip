@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.samplesenti">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Worldcuplist2010_4"></activity>
+        <activity android:name=".Worldcuplist2010_3" />
+        <activity android:name=".Worldcuplist2010_2" />
+        <activity android:name=".Worldcuplist2010_1" />
+        <activity android:name=".Worldcuplist2010" />
+        <activity android:name=".Worldcuplist2014_4" />
+        <activity android:name=".Worldcuplist2014_3" />
+        <activity android:name=".Worldcuplist2014_2" />
+        <activity android:name=".Worldcuplist2014_1" />
+        <activity android:name=".Worldcuplist2014" />
+        <activity android:name=".Community2" />
+        <activity android:name=".Community1" />
+        <activity android:name=".Community" />
+        <activity android:name=".Msball1_2" />
+        <activity android:name=".Msball1_1" />
+        <activity android:name=".Msball" />
+        <activity android:name=".Origin1_2" />
+        <activity android:name=".Origin1_1" />
+        <activity android:name=".Origin" />
+        <activity android:name=".Worldcuplist2018_4" />
+        <activity android:name=".Worldcuplist2018_3" />
+        <activity android:name=".Worldcuplist2018_2" />
+        <activity android:name=".Worldcuplist2018_1" />
+        <activity android:name=".Worldcuplist2018" />
+        <activity android:name=".Worldcuplist" />
+        <activity android:name=".Nonsign" />
+        <activity android:name=".Home" />
+        <activity android:name=".Signup" />
+        <activity android:name=".Initscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
